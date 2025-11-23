@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       from: 'Contact Form <onboarding@resend.dev>', // Resend verified domain
       to: 'syedareebali795@gmail.com', // Your email
       subject: 'New Contact Form Submission',
-      replyTo: email, // User ka email
+      reply_to: email, // User ka email
       react: ContactFormEmail({ message, senderEmail: email }),
     });
 
