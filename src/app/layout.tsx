@@ -10,7 +10,7 @@ import Footer from '@/common/components/shared/footer';
 import { ModeToggle } from '@/common/theme/mode-toggler';
 
 export const metadata: Metadata = {
-  title: 'Maksym Azimov | Portfolio',
+  title: 'RebelVerse | Portfolio',
   description:
     'Check out modern and stylish porfolio of an experienced Web Developer Maksym Azimov! Built using TypeScript, Next.js 14, Framaer Motion and Tailwind CSS.',
 };

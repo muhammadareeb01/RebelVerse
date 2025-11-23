@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 
 export default function Services() {
-  const [hoveredService, setHoveredService] = useState(null);
+  const [hoveredService, setHoveredService] = useState<number | null>(null);
   const servicesRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
