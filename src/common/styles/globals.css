@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Cream Background */
+    --background: 40 92% 91%; 
+    /* Deep Blue Foreground */
+    --foreground: 201 100% 14%; 
+    
+    /* Cream Card - slightly lighter or same */
+    --card: 40 92% 94%;
+    --card-foreground: 201 100% 14%;
+    
+    /* Popover same as card */
+    --popover: 40 92% 94%;
+    --popover-foreground: 201 100% 14%;
+    
+    /* Dark Red Primary */
+    --primary: 0 100% 24%;
+    --primary-foreground: 40 92% 91%; /* Cream text on primary */
+    
+    /* Muted Blue Secondary */
+    --secondary: 203 39% 51%;
+    --secondary-foreground: 40 92% 91%;
+    
+    /* Muted for subtext */
+    --muted: 203 20% 80%;
+    --muted-foreground: 201 60% 30%;
+    
+    /* Vivid Red Accent */
+    --accent: 356 84% 41%;
+    --accent-foreground: 40 92% 91%;
+    
+    /* Destructive - same as vivid red or similar */
+    --destructive: 356 84% 41%;
+    --destructive-foreground: 40 92% 91%;
+    
+    --border: 201 50% 80%;
+    --input: 201 50% 80%;
+    --ring: 0 100% 24%;
+    
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Deep Blue Background */
+    --background: 201 100% 14%;
+    /* Cream Foreground */
+    --foreground: 40 92% 91%;
+    
+    /* Dark Ocean/Deep Blue Card */
+    --card: 201 80% 10%;
+    --card-foreground: 40 92% 91%;
+    
+    --popover: 201 80% 10%;
+    --popover-foreground: 40 92% 91%;
+    
+    /* Dark Red Primary keeps its punch or goes a bit brighter */
+    --primary: 0 100% 30%;
+    --primary-foreground: 40 92% 91%;
+    
+    /* Muted Blue Secondary */
+    --secondary: 203 39% 51%;
+    --secondary-foreground: 201 100% 14%;
+    
+    --muted: 201 50% 20%;
+    --muted-foreground: 203 20% 70%;
+    
+    /* Vivid Red Accent */
+    --accent: 356 84% 41%;
+    --accent-foreground: 40 92% 91%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 40 92% 91%;
+    
+    --border: 201 50% 20%;
+    --input: 201 50% 20%;
+    --ring: 0 100% 30%;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
