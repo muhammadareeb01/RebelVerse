@@ -96,7 +96,11 @@ export default function Testimonials() {
   }, [activeIndex]);
 
   const slideVariants = {
+<<<<<<< HEAD
     enter: (direction) => ({
+=======
+    enter: (direction: number) => ({
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
       x: direction > 0 ? 1000 : -1000,
       opacity: 0,
       scale: 0.8,
@@ -107,7 +111,11 @@ export default function Testimonials() {
       opacity: 1,
       scale: 1,
     },
+<<<<<<< HEAD
     exit: (direction) => ({
+=======
+    exit: (direction: number) => ({
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
       zIndex: 0,
       x: direction < 0 ? 1000 : -1000,
       opacity: 0,
@@ -122,7 +130,58 @@ export default function Testimonials() {
       className="relative py-20 px-4 sm:px-6 lg:px-8 w-full bg-gradient-to-b from-white via-blue-50/30 to-white dark:from-slate-900 dark:via-blue-900/20 dark:to-slate-900 overflow-hidden"
     >
       {/* Animated Background */}
+<<<<<<< HEAD
       {/* Animated Background removed */}
+=======
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <motion.div
+          className="absolute w-[600px] h-[600px] bg-gradient-to-r from-blue-300/20 to-purple-300/20 dark:from-blue-500/10 dark:to-purple-500/10 rounded-full blur-3xl"
+          style={{ y, top: '10%', left: '10%' }}
+          animate={{
+            scale: [1, 1.3, 1],
+            opacity: [0.3, 0.6, 0.3],
+          }}
+          transition={{ duration: 8, repeat: Infinity }}
+        />
+        <motion.div
+          className="absolute w-[500px] h-[500px] bg-gradient-to-r from-pink-300/20 to-orange-300/20 dark:from-pink-500/10 dark:to-orange-500/10 rounded-full blur-3xl"
+          style={{
+            y: useTransform(y, (val) => -val),
+            bottom: '10%',
+            right: '10%',
+          }}
+          animate={{
+            scale: [1, 1.4, 1],
+            opacity: [0.2, 0.5, 0.2],
+          }}
+          transition={{ duration: 10, repeat: Infinity, delay: 2 }}
+        />
+
+        {/* Floating stars */}
+        {[...Array(6)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              y: [0, -20, 0],
+              opacity: [0.2, 0.8, 0.2],
+              rotate: [0, 180, 360],
+            }}
+            transition={{
+              duration: 3 + Math.random() * 2,
+              repeat: Infinity,
+              delay: Math.random() * 2,
+            }}
+          >
+            <Star className="w-4 h-4 text-yellow-400 dark:text-yellow-500 fill-current" />
+          </motion.div>
+        ))}
+      </div>
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}

@@ -37,7 +37,33 @@ export default function Header() {
   return (
     <header className="relative z-[99]">
       {/* Subtle Floating Particles */}
+<<<<<<< HEAD
       {/* Subtle Floating Particles removed */}
+=======
+      <div className="fixed top-0 left-0 right-0 h-24 pointer-events-none overflow-hidden">
+        {[...Array(4)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-1 h-1 rounded-full bg-orange-400/40 dark:bg-orange-500/40"
+            style={{
+              left: `${20 + i * 20}%`,
+              top: '1.5rem',
+            }}
+            animate={{
+              y: [0, -20, 0],
+              opacity: [0, 0.6, 0],
+              scale: [0, 1, 0],
+            }}
+            transition={{
+              duration: 4 + i * 0.5,
+              repeat: Infinity,
+              delay: i * 0.6,
+              ease: 'easeInOut',
+            }}
+          />
+        ))}
+      </div>
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
 
       {/* Logo - Fixed Left Side */}
       <motion.div

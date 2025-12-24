@@ -10,7 +10,11 @@ import Footer from '@/common/components/shared/footer';
 import { ModeToggle } from '@/common/theme/mode-toggler';
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: 'Maksym Azimov | Portfolio',
+=======
+  title: 'RebelVerse | Portfolio',
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
   description:
     'Check out modern and stylish porfolio of an experienced Web Developer Maksym Azimov! Built using TypeScript, Next.js 14, Framaer Motion and Tailwind CSS.',
 };
@@ -28,7 +32,11 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={cn(
+<<<<<<< HEAD
           'relative flex items-center justify-center animate-fade-in',
+=======
+          'relative flex items-center justify-center',
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
           fontMontserrat.className,
         )}
       >

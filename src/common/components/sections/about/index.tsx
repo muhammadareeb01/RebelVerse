@@ -25,8 +25,13 @@ import {
 
 export default function About() {
   const sectionRef = useRef(null);
+<<<<<<< HEAD
   const [hoveredStat, setHoveredStat] = useState(null);
   const [hoveredValue, setHoveredValue] = useState(null);
+=======
+  const [hoveredStat, setHoveredStat] = useState<number | null>(null);
+  const [hoveredValue, setHoveredValue] = useState<number | null>(null);
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -78,7 +83,11 @@ export default function About() {
   //     text: 'Delivered Solutions to Fortune 500 Companies',
   //     icon: <Briefcase />,
   //   },
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
   // ];
 
   return (
@@ -88,7 +97,58 @@ export default function About() {
       className="relative py-20 px-4 sm:px-6 lg:px-8 w-full bg-gradient-to-b from-white via-orange-50/30 to-white dark:from-slate-900 dark:via-purple-900/20 dark:to-slate-900 overflow-hidden"
     >
       {/* Advanced Animated Background */}
+<<<<<<< HEAD
       {/* Advanced Animated Background removed */}
+=======
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <motion.div
+          className="absolute w-[600px] h-[600px] bg-gradient-to-r from-orange-300/20 to-pink-300/20 dark:from-orange-500/10 dark:to-pink-500/10 rounded-full blur-3xl"
+          style={{ y, top: '5%', left: '0%' }}
+          animate={{
+            scale: [1, 1.3, 1],
+            opacity: [0.3, 0.6, 0.3],
+            x: [0, 50, 0],
+          }}
+          transition={{ duration: 10, repeat: Infinity }}
+        />
+        <motion.div
+          className="absolute w-[500px] h-[500px] bg-gradient-to-r from-blue-300/20 to-purple-300/20 dark:from-blue-500/10 dark:to-purple-500/10 rounded-full blur-3xl"
+          style={{
+            y: useTransform(y, (val) => -val),
+            bottom: '5%',
+            right: '0%',
+          }}
+          animate={{
+            scale: [1, 1.4, 1],
+            opacity: [0.2, 0.5, 0.2],
+            x: [0, -50, 0],
+          }}
+          transition={{ duration: 12, repeat: Infinity, delay: 2 }}
+        />
+
+        {/* Floating Particles */}
+        {[...Array(8)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-2 h-2 bg-gradient-to-r from-orange-400 to-pink-400 dark:from-orange-500 dark:to-pink-500 rounded-full"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              y: [0, -30, 0],
+              opacity: [0, 1, 0],
+              scale: [0, 1.5, 0],
+            }}
+            transition={{
+              duration: 3 + Math.random() * 2,
+              repeat: Infinity,
+              delay: Math.random() * 2,
+            }}
+          />
+        ))}
+      </div>
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
@@ -293,6 +353,7 @@ export default function About() {
                 </span>
                 .
               </motion.p>
+<<<<<<< HEAD
 
               {/* <motion.div
                 className="p-5 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-xl border-l-4 border-blue-500 dark:border-blue-400"
@@ -315,6 +376,8 @@ export default function About() {
                   </div>
                 </div>
               </motion.div> */}
+=======
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
             </motion.div>
 
             {/* Services Grid - What We Provide */}
@@ -381,7 +444,11 @@ export default function About() {
                 </motion.div>
 
                 {/* Image */}
+<<<<<<< HEAD
                <div className="relative w-48 h-48 mx-auto mb-6">
+=======
+                <div className="relative w-48 h-48 mx-auto mb-6">
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-br from-orange-400 via-pink-400 to-purple-400 dark:from-orange-500 dark:via-pink-500 dark:to-purple-500 rounded-full blur-xl opacity-50"
                     animate={{ rotate: 360 }}
@@ -401,7 +468,10 @@ export default function About() {
                     />
                   </div>
                 </div>
+<<<<<<< HEAD
                  
+=======
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
 
                 {/* Name & Title */}
                 <div className="text-center mb-6">
@@ -418,6 +488,7 @@ export default function About() {
                     </span>
                   </div>
                 </div>
+<<<<<<< HEAD
 
                 {/* Achievements */}
                 {/* <div className="space-y-3">
@@ -441,6 +512,8 @@ export default function About() {
                     </motion.div>
                   ))}
                 </div> */}
+=======
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
               </div>
             </div>
           </motion.div>

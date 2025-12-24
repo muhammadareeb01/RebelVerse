@@ -19,6 +19,15 @@ const config = {
     },
     extend: {
       colors: {
+<<<<<<< HEAD
+=======
+        lightBlue: "#8db7fc",
+        darkBlue: "#60a5fa",
+        darkBg: "#0a0908",
+        darkBeige: "#ddbea9",
+        darkOcean: "#22333B",
+        lightBeige: "#ffcbb4",
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -67,6 +76,7 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+<<<<<<< HEAD
         "fade-in": {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
@@ -75,12 +85,17 @@ const config = {
           "0%": { transform: "translateY(20px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
+=======
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+<<<<<<< HEAD
         "fade-in": "fade-in 0.8s ease-out forwards",
         "slide-up": "slide-up 0.8s ease-out forwards",
+=======
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
       },
     },
   },

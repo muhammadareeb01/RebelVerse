@@ -71,7 +71,56 @@ export default function Footer() {
   return (
     <footer className="relative w-full bg-gradient-to-b from-slate-900 via-slate-900 to-black dark:from-slate-950 dark:via-slate-950 dark:to-black overflow-hidden">
       {/* Animated Background */}
+<<<<<<< HEAD
       {/* Animated Background removed */}
+=======
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+        <motion.div
+          className="absolute w-96 h-96 bg-gradient-to-r from-orange-500/20 to-pink-500/20 rounded-full blur-3xl"
+          animate={{
+            x: [0, 100, 0],
+            y: [0, -50, 0],
+            scale: [1, 1.2, 1],
+          }}
+          transition={{ duration: 10, repeat: Infinity }}
+          style={{ top: '20%', left: '10%' }}
+        />
+        <motion.div
+          className="absolute w-96 h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl"
+          animate={{
+            x: [0, -100, 0],
+            y: [0, 50, 0],
+            scale: [1, 1.3, 1],
+          }}
+          transition={{ duration: 12, repeat: Infinity, delay: 2 }}
+          style={{ bottom: '20%', right: '10%' }}
+        />
+
+        {/* Floating Stars */}
+        {[...Array(8)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              y: [0, -20, 0],
+              opacity: [0.2, 0.8, 0.2],
+              scale: [0.5, 1, 0.5],
+            }}
+            transition={{
+              duration: 3 + Math.random() * 2,
+              repeat: Infinity,
+              delay: Math.random() * 2,
+            }}
+          >
+            <Star className="w-3 h-3 text-orange-400 fill-current" />
+          </motion.div>
+        ))}
+      </div>
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Footer Content */}
@@ -206,7 +255,11 @@ export default function Footer() {
                   'UI/UX Design',
                   'E-commerce',
                   'Automation',
+<<<<<<< HEAD
               
+=======
+                  'Branding',
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
                 ].map((service, index) => (
                   <motion.li
                     key={index}

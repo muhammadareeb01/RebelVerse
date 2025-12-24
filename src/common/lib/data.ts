@@ -29,10 +29,13 @@ export const links = [
     id: 'projects',
   },
   {
+<<<<<<< HEAD
     name: 'Experience',
     id: 'experience',
   },
   {
+=======
+>>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
     name: 'Testimonials',
     id: 'testimonials',
   },
