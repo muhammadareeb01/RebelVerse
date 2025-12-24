@@ -37,9 +37,6 @@ export default function Header() {
   return (
     <header className="relative z-[99]">
       {/* Subtle Floating Particles */}
-<<<<<<< HEAD
-      {/* Subtle Floating Particles removed */}
-=======
       <div className="fixed top-0 left-0 right-0 h-24 pointer-events-none overflow-hidden">
         {[...Array(4)].map((_, i) => (
           <motion.div
@@ -63,7 +60,6 @@ export default function Header() {
           />
         ))}
       </div>
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
 
       {/* Logo - Fixed Left Side */}
       <motion.div

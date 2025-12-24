@@ -39,9 +39,6 @@ export default function Hero() {
         </video>
 
         {/* Animated Particles/Dots */}
-<<<<<<< HEAD
-        {/* Animated Particles/Dots removed */}     {/* Floating Geometric Shapes removed */}
-=======
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             className="absolute w-2 h-2 bg-blue-400 dark:bg-blue-300 rounded-full"
@@ -107,7 +104,6 @@ export default function Hero() {
             style={{ bottom: '20%', right: '15%' }}
           />
         </div>
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
 
         {/* Main Content */}
         <div className="container relative z-10 flex flex-col items-center justify-center tracking-wide text-black dark:text-white px-4">
@@ -117,11 +113,7 @@ export default function Hero() {
               initial={{ width: 0, opacity: 0 }}
               animate={{ width: '200px', opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
-<<<<<<< HEAD
-              className="h-0.5 bg-gradient-to-r from-transparent via-primary dark:via-primary to-transparent mb-8"
-=======
               className="h-0.5 bg-gradient-to-r from-transparent via-blue-500 dark:via-blue-400 to-transparent mb-8"
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
             />
 
             {/* Hey! Text with Icon */}
@@ -131,19 +123,11 @@ export default function Hero() {
               transition={{ duration: 0.6 }}
               className="mb-6 flex items-center gap-3"
             >
-<<<<<<< HEAD
-              <Sparkles className="w-6 h-6 text-accent dark:text-accent animate-pulse" />
-              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary dark:text-primary">
-                Hey!
-              </span>
-              <Sparkles className="w-6 h-6 text-accent dark:text-accent animate-pulse" />
-=======
               <Sparkles className="w-6 h-6 text-yellow-500 dark:text-yellow-400 animate-pulse" />
               <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-600 dark:text-blue-400">
                 Hey!
               </span>
               <Sparkles className="w-6 h-6 text-yellow-500 dark:text-yellow-400 animate-pulse" />
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
             </motion.div>
 
             {/* Main Heading Container */}
@@ -157,19 +141,11 @@ export default function Hero() {
               >
                 <span className="relative inline-block">
                   {/* Glowing Background - Theme Aware */}
-<<<<<<< HEAD
-                  <span className="absolute inset-0 blur-3xl bg-gradient-to-r from-primary via-accent to-secondary opacity-40 dark:opacity-50 animate-pulse"></span>
-
-                  {/* Main Text with Gradient - Theme Aware */}
-                  <span
-                    className="relative bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary"
-=======
                   <span className="absolute inset-0 blur-3xl bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-500 dark:via-purple-500 dark:to-pink-500 opacity-40 dark:opacity-50 animate-pulse"></span>
 
                   {/* Main Text with Gradient - Theme Aware */}
                   <span
                     className="relative bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400"
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
                     style={{
                       animation: 'gradient 3s ease infinite',
                       backgroundSize: '200% 200%',
@@ -185,11 +161,7 @@ export default function Hero() {
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 1, delay: 0.8 }}
-<<<<<<< HEAD
-                className="h-1 bg-gradient-to-r from-primary via-accent to-secondary rounded-full mx-auto mb-6"
-=======
                 className="h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 rounded-full mx-auto mb-6"
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
                 style={{ width: '60%', transformOrigin: 'center' }}
               />
 
@@ -198,11 +170,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1 }}
-<<<<<<< HEAD
-                className="text-lg sm:text-xl lg:text-2xl text-foreground font-semibold mb-3"
-=======
                 className="text-lg sm:text-xl lg:text-2xl text-gray-800 dark:text-gray-200 font-semibold mb-3"
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
               >
                 Building Digital Dreams into Reality
               </motion.p>
@@ -212,11 +180,7 @@ export default function Hero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2 }}
-<<<<<<< HEAD
-                className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto"
-=======
                 className="text-sm sm:text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto"
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
               >
                 We help businesses and creators build their digital presence
                 through smart and modern tech solutions
@@ -228,11 +192,7 @@ export default function Hero() {
               initial={{ width: 0, opacity: 0 }}
               animate={{ width: '150px', opacity: 1 }}
               transition={{ duration: 1, delay: 1.3 }}
-<<<<<<< HEAD
-              className="h-0.5 bg-gradient-to-r from-transparent via-primary dark:via-primary to-transparent mb-10"
-=======
               className="h-0.5 bg-gradient-to-r from-transparent via-purple-500 dark:via-purple-400 to-transparent mb-10"
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
             />
 
             {/* CTA Buttons */}
@@ -258,13 +218,8 @@ export default function Hero() {
                 whileTap={{ scale: 0.95 }}
               >
                 {/* Animated Background */}
-<<<<<<< HEAD
-                <div className="absolute inset-0 bg-primary/90 transition-all duration-300"></div>
-                <div className="absolute inset-0 bg-accent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-=======
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-600 dark:to-purple-700 transition-all duration-300"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-700 dark:from-blue-700 dark:to-purple-800 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
 
                 {/* Button Content */}
                 <span className="relative z-10">Contact me here</span>
@@ -276,20 +231,12 @@ export default function Hero() {
                 href="https://www.fiverr.com/muhammadareeb79?public_mode=true"
                 target="_blank"
                 rel="noopener noreferrer"
-<<<<<<< HEAD
-                className="group flex w-64 sm:w-auto cursor-pointer items-center justify-center gap-2 rounded-full bg-white/20 dark:bg-white/10 backdrop-blur-sm px-8 py-4 text-foreground font-semibold outline-none transition-all duration-300 border border-gray-300/50 dark:border-white/20 hover:bg-white/30 dark:hover:bg-white/20 hover:border-primary/50 shadow-md hover:shadow-lg"
-=======
                 className="group flex w-64 sm:w-auto cursor-pointer items-center justify-center gap-2 rounded-full bg-white/20 dark:bg-white/10 backdrop-blur-sm px-8 py-4 text-gray-900 dark:text-white font-semibold outline-none transition-all duration-300 border border-gray-300/50 dark:border-white/20 hover:bg-white/30 dark:hover:bg-white/20 hover:border-gray-400/70 dark:hover:border-white/40 shadow-md hover:shadow-lg"
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <span>View on Fiverr</span>
-<<<<<<< HEAD
-                <Star className="w-5 h-5 fill-accent text-accent" />
-=======
                 <Star className="w-5 h-5 fill-yellow-500 dark:fill-yellow-400 text-yellow-500 dark:text-yellow-400" />
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
               </motion.a>
 
               {/* Social Icons - Theme Aware */}
@@ -297,11 +244,7 @@ export default function Hero() {
                 <motion.a
                   href="https://www.linkedin.com/in/maksym-azimov/"
                   target="_blank"
-<<<<<<< HEAD
-                  className="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full bg-white/20 dark:bg-white/10 backdrop-blur-sm border border-gray-300/50 dark:border-white/20 text-foreground transition-all duration-300 hover:bg-primary hover:text-white hover:border-primary shadow-md hover:shadow-lg"
-=======
                   className="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full bg-white/20 dark:bg-white/10 backdrop-blur-sm border border-gray-300/50 dark:border-white/20 text-gray-900 dark:text-white transition-all duration-300 hover:bg-blue-500 hover:text-white hover:border-blue-400 shadow-md hover:shadow-lg"
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
                 >
@@ -313,8 +256,6 @@ export default function Hero() {
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                   </svg>
                 </motion.a>
-<<<<<<< HEAD
-=======
 
                 {/* <motion.a
                   href="https://github.com/bbyc4kes"
@@ -331,7 +272,6 @@ export default function Hero() {
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                   </svg>
                 </motion.a> */}
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
               </div>
             </motion.div>
           </div>
@@ -349,15 +289,9 @@ export default function Hero() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-<<<<<<< HEAD
-          <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center p-2 hover:border-primary transition-colors">
-            <motion.div
-              className="w-1 h-3 bg-primary rounded-full"
-=======
           <div className="w-6 h-10 border-2 border-gray-600/60 dark:border-white/40 rounded-full flex justify-center p-2 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
             <motion.div
               className="w-1 h-3 bg-gray-600 dark:bg-white/60 rounded-full"
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
             />
@@ -381,13 +315,8 @@ export default function Hero() {
       </section>
 
       {/* Section Divider - Theme Aware */}
-<<<<<<< HEAD
-      <div className="flex w-full justify-center bg-background">
-        <div className="w-full max-w-7xl h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-=======
       <div className="flex w-full justify-center bg-white dark:bg-darkBg">
         <div className="w-full max-w-7xl h-px bg-gradient-to-r from-transparent via-purple-400/50 dark:via-purple-500/50 to-transparent"></div>
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
       </div>
     </>
   );

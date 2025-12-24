@@ -71,9 +71,6 @@ export default function Footer() {
   return (
     <footer className="relative w-full bg-gradient-to-b from-slate-900 via-slate-900 to-black dark:from-slate-950 dark:via-slate-950 dark:to-black overflow-hidden">
       {/* Animated Background */}
-<<<<<<< HEAD
-      {/* Animated Background removed */}
-=======
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
         <motion.div
           className="absolute w-96 h-96 bg-gradient-to-r from-orange-500/20 to-pink-500/20 rounded-full blur-3xl"
@@ -120,7 +117,6 @@ export default function Footer() {
           </motion.div>
         ))}
       </div>
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Footer Content */}
@@ -255,11 +251,7 @@ export default function Footer() {
                   'UI/UX Design',
                   'E-commerce',
                   'Automation',
-<<<<<<< HEAD
-              
-=======
                   'Branding',
->>>>>>> 3c4b385c930dda774abe94c8f03a8a4bd613a0b2
                 ].map((service, index) => (
                   <motion.li
                     key={index}
